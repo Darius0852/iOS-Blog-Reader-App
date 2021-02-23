@@ -19,7 +19,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let url = URL(string: "https://www.googleapis.com/blogger/v3/blogs/2399953/posts?key=AIzaSyAs4j20C-dZh54gJf55PBnwjeGfRgl96rk")!
+        // Replace YOURKEY with you google api key 
+        let url = URL(string: "https://www.googleapis.com/blogger/v3/blogs/2399953/posts?key=YOURKEY")!
         
         let task = URLSession.shared.dataTask(with: url) {
         (data, response, error) in
